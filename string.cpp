@@ -1,8 +1,13 @@
 #include <iostream>
+#include <string>
+
+
 using namespace std;
 int main(int argc, char const *argv[]){
 char exit = 'x';
+string message = "hello world";
 
-    cout << "the value of 'x' is: " << exit << endl; 
-    return 0;
+
+std::cout << message << exit << std::endl;
+
 }
