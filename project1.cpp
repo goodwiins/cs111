@@ -6,7 +6,7 @@ short height = 3;
 short answer = 0;
 
 	answer = (length + height) * 2;
-	std::cout << "The Perimeter of Triangle is " << answer << std::endl;
+	std::cout << "The Perimeter of Triangle is: " << answer << std::endl;
 
 
 
