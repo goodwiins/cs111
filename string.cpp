@@ -9,6 +9,6 @@ char exit1 = 0x40;
 string message = "hello world";
 
 
-std::cout << message << exit << std::endl;
+std::cout << message << exit << "they are the same " << exit1 << std::endl;
 
 }
