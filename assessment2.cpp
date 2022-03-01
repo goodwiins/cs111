@@ -1,31 +1,29 @@
-/* 
-The problem statement is that we need to get two values and sum them together. 
-Then output the message.  
-	First step: gets the first value, then get the sec value from the user. 
-	Sec step: sum the two values together. 
-	third step: display the message. 
-the value type should be int for the a, b, sum. From the fact that int takes 4 bytes of memory for each.
- */
+/*
 
+Programmer: Abdelghafour el bikha.
 
+This is algorithm development 2. This program was written on a windows computer using Word.
+*/
 
 #include <iostream>
-#include <string>
 
 using namespace std;
 
-int a;
-int b;
-int sum = 0;
 int main(){
 
-    cout << "can you please entree two values" << endl;
-    cin >> a >> b;
+long int first = 0 ;
+long int second = 0 ;
+long int sum = 0 ;
+
+    cout << "can you please entree the first number" << endl;
+    cin >> first;
+    cout << "entree the second number" << endl;
+    cin >> second;
     
-    sum = a + b;
+    sum = first + second;
     
-    cout << "The sum of " << a << "and " << b << " is " << sum << endl;
+    cout << "The sum of " << first << " and " << second << " is " << sum << endl;
     
     return 0;
-
 }
+
