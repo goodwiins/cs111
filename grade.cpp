@@ -8,7 +8,7 @@ char LetterGrade;
     cout << "Entre a grade.\n";
     cin >> grade; 
 
-    if ((grade < 0) && (grade > 100)){
+    if ((grade < 0) || (grade > 100)){
         if (( grade >= 90 ) && ( grade <= 100 ))
             LetterGrade = 'A';
         else
