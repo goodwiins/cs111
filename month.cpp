@@ -15,10 +15,15 @@ long days = 0;
     if (year <= 0){
         cout << "entre the year again\n";
         cin >> year;
+        cout << " Entre the month\n";
+        cin >> month;
+         if (month < 0 || month >12){
+            cout << " The month entred is wrong\n";
+        } 
     } else {
         cout << " Entre the month\n";
         cin >> month;
-        if (month <= 0 || month >12){
+        if (month < 0 || month >12){
             cout << " The month entred is wrong\n";
         } 
      }
@@ -46,4 +51,3 @@ long days = 0;
 
 
     }
-}
