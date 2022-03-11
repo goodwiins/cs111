@@ -22,8 +22,12 @@ long days = 0;
     else
         cout << "Entre the month\n";
         cin >> month;
-        if (month < 0 || month > 12)
-            cout << "The month entred is wrong\n";
+        if (month < 0 || month > 12){
+            cout << "The month entred is wrong, Please renter the month\n";
+            cin >> month;
+        }
+            
+            
     if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
         LeapYear = 1;
     else
@@ -37,5 +41,5 @@ long days = 0;
         days = 30;
     cout << "The number of days in " << month << "," << year << " is " << days << "." << endl;
     // month, year, day, is leap year.
-
+return 0;
 }
