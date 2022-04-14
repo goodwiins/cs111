@@ -16,7 +16,14 @@ char displayMenu(){
   menuSelection = toupper(menuSelection);
   return menuSelection;
 }
- 
+
+char returnValidMenuOption(){
+  if (section =! '1' || section =! '2' || section =! '3' section =! ||'4' section =! 'X')
+  return cout<< "Invalid";
+  else
+  return displayMenu();
+}
+
 int main() {
   
 long base = 0;
@@ -73,7 +80,7 @@ char menuSelection = '0';
     cin >> radius;
     cout << "enter height";
     cin >> height;
-    if ((radius >=25) && (radius>=25)){
+    if ((radius >=25) && (height>=25)){
       volume = (1 / 3)*(M_PI*sqrt(radius))*(height);
       area = M_PI*radius*(radius+height^2+radius^2); 
       cout << "The volume and surface area of a cone have the radius" << radius << "and height" << height <<  "is" << volume <<  "and" << area<< ", respectively." << endl;
