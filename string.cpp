@@ -4,11 +4,10 @@
 
 using namespace std;
 int main(int argc, char const *argv[]){
-char exit = 'x';
-char exit1 = 0x40;
-string message = "hello world";
+int   bob  =   100 ;
 
-
-std::cout << message << exit << "they are the same " << exit1 << std::endl;
+if ( bob > 65 ) 
+   cout << "Bob failed.  Inconceivable!\n" ;
+   cout << "Bob is still a good student\n" ;
 
 }

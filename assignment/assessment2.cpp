@@ -15,9 +15,9 @@ long int first = 0 ;
 long int second = 0 ;
 long int sum = 0 ;
 
-    cout << "can you please entree the first number" << endl;
+    cout << "can you please enter the first number" << endl;
     cin >> first;
-    cout << "entree the second number" << endl;
+    cout << "enter the second number" << endl;
     cin >> second;
     
     sum = first + second;
