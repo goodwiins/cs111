@@ -50,6 +50,101 @@ double diameter =0;
     diameter = 2*radius;
   return diameter;
 }
+<<<<<<< HEAD
+=======
+
+
+void processCircle(){
+long radius = 0;
+double diameter =0;
+double area = 0;
+    radius = queryForLong("enter the radius");
+        if (radius >=25){
+          area = computeCircleArea(radius);
+          diameter = computeCircleDiameter(area);
+          cout << "The area and diameter of a circle having a radius of "<< radius << "are" << area << "and " << diameter << ", respectively."<< endl;
+          } else 
+          cout << "Invalid data.  The program could not continue.";
+}
+
+long computeTriangleArea (long length){
+long height;
+long area;
+    height = sqrt(3/2)*length;
+    area = (length+height)/2;
+    return area;
+}
+
+
+long computeTrianglePerimeter(long length){
+long perimeter = 0;
+    perimeter = 3*length;
+    return perimeter;
+}
+void processEquilateralTriangle(){
+long length = 0;
+double area =0;
+double perimeter = 0;
+  length = queryForDouble("enter the length");
+  if (length >= 25){
+    area = computeTriangleArea(length);
+    perimeter = computeTrianglePerimeter(length);
+    cout <<"The area and perimeter of an equilateral triangle having a base length of "<< length <<"are " << area << "and " << perimeter <<", respectively. "<< endl;
+
+  }else cout << "Invalid data.  The program could not continue.";
+
+
+}
+
+long computeSquareArea (long length){
+long area = 0;
+  area = length^2;
+  return area;
+
+}
+long computeSquarePerimeter(long length){
+  long perimeter = 0;
+  perimeter = 4*length;
+  return perimeter;
+}
+void processSquare(){
+long length = 0;
+double area =0;
+double perimeter = 0;
+  length = queryForLong("enter the length");
+  if (length >= 25){
+    area = computeSquareArea(length);
+    perimeter = computeSquarePerimeter(length);
+    cout << "The area and perimeter of a square having a side length of" << length << "are" << area << "and" << perimeter <<", respectively.";
+
+  }else cout << "Invalid data.  The program could not continue.";
+
+}
+
+double computeConeVolume (long radius, long height){
+long volume = 0;
+
+  volume = (1 / 3)*(M_PI*sqrt(radius))*(height);
+  return volume;
+}
+double computeConeSurfaceArea(long radius, long height)
+long area = 0; 
+  area = M_PI*radius*(radius+height^2+radius^2); 
+  return area;
+
+void processCone() {
+  radius = queryForLong("enter the radius");
+  height = queryForLong("enter the height");
+  if ((radius >=25) && (height>=25)){
+    volume = computeConeVolume(radius,height);
+    area = computeConeSurfaceArea(radius,height);
+    cout << "The volume and surface area of a cone have the radius" << radius << "and height" << height <<  "is" << volume <<  "and" << area<< ", respectively." << endl;
+  }else
+      cout << "Invalid data.  The program could not continue.";
+
+
+}
+>>>>>>> origin/main
 
 
 void processCircle(){
